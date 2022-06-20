@@ -86,8 +86,8 @@ a{
     left: 420px;
 }
 #tt1 {
-    border: 2px solid #7fffd4;
-    box-shadow: 5px 4px 29px #7fffd4;
+    
+    box-shadow: 5px 4px 29px blue;
     padding: 50px;
 }
 

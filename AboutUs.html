@@ -3,35 +3,55 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About Us</title>
-    <link href="StyleSheet1.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
 <body>
-    <nav>
-        <ul>
-            <li>
-                <a href="External.html">Home</a>
-            </li>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" \>
+                <nav class="navbar navbar-expand-lg bg-light">
+                    <div class="container-fluid">
 
-            <li>
-                <a href="AboutUs.html">About Us</a>
-            </li>
-            <li>
-                <a href="ContactUs.html">Contact Us</a>
-            </li>
-        </ul>
-    </nav>
-    <h2 style="text-align: center; padding-left: 136px; height: 30px; background-color: #65e1d0a6;">About Us:</h2>
-    <div style="padding-left: 200px; padding-top: 100px;" ><table>
-        <tr>
-            <td><img src="image.jpg" style="width: 400px;"/></td>
-            <td style="padding-left: 20px; text-align: justify;"><h3>What is CSS?</h3><pre>
-CSS stands for Cascading Style Sheets
-CSS describes how HTML elements are to be displayed on screen, paper, or in other media
-CSS saves a lot of work. It can control the layout of multiple web pages all at once
-External stylesheets are stored in CSS files</pre></td>
-        </tr>
-    </table></div>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="BSDemo2.html">Home</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="AboutUs.html">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="ContactUs.html">Contact Us</a>
+                                </li>
+
+
+                            </ul>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="ss.jpeg" style="width:100%; height:400px; padding-top:50px; " />
+            </div>
+            <div class="col-md-8" style="padding-top: 43px; padding-left: 282px; }">
+                <h1>About Us:</h1>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 </body>
 </html>

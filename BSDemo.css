@@ -1,11 +1,38 @@
 ﻿img {
     
-    width: 100%;
+    width: 50%;
     height: 200px;
-    border: 2px solid blue;
-   box-shadow: 10px 10px 10px blue
+    
+   
 }
-.row
+#A {
+    margin-top: 20px;
+    background-color:red;
+}
+.row {
+    margin-top: 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+p {
+    margin-top: 10px;
+}
+a {
+    text-decoration: none;
+}
+.card {
+    box-shadow: 5px 5px 5px #e5d9d9;
+}
+.fa-facebook-official
 {
-    margin-top:20px;
+    padding-right:10px;
+    
+}
+.fa-twitter {
+    padding-right: 10px;
+}
+.ganesh {
+    position:sticky;
+    top:0px;
+    z-index:3;
 }

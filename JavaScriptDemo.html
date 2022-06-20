@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div id="id1"></div><br />
+    <div id="id2"></div>
+    <script>
+
+        var name = "suraj";
+        var age = 28;
+        for (var i = 0; i < 2; i++) {
+            console.log(name + " " + age);
+
+        }
+        function add(a, b) {
+
+            var c = a + b;
+
+            console.log("Addition:" + c);
+        }
+        function mul(a, b) {
+
+            var c = a * b;
+
+            return c;
+        }
+        add(50, 70);
+        var r = mul(35, 45);
+        console.log("Multiplication:" + r);
+        var nums = [15, 84, 5, 16, 54, 23];
+        document.getElementById("id1").innerHTML = nums;
+        nums.pop();
+        nums.push(33);
+        nums.shift();
+        nums.unshift(39);
+        nums.reverse();
+        document.getElementById("id2").innerHTML = nums;
+
+    </script>
+
+</body>
+</html>
