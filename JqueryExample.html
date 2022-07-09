@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+   
+
+    
+
+    <style>
+        #p1 {
+            color: red;
+            border: 2px solid
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <p id="p1">Abcdefghijlmopqrstuvwxyz</p>
+    <input type="button" value="Hide" id="btn1" />
+    <input type="button" value="show" id="btn2" /><br />
+    <br />
+    First Value:<input type="text" id="fValue" /><br />
+    Second Value:<input type="text" id="sValue" /><br />
+    Result:<input type="text" value="" id="t3" /><br />
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <input type="button" value="Add" id="btn3" />
+    <div id="dialog-message" title="Download complete">
+        <p>
+            <span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>
+            Your files have downloaded successfully into the My Downloads folder.
+        </p>
+        <p>
+            Currently using <b>36% of your storage space</b>.
+        </p>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+            integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+            crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"
+            integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY="
+            crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("#p1").hide("scale", 1000);
+            });
+            $("#btn2").click(function () {
+                $("#p1").show("scale", 1000);
+            });
+            $("#btn3").click(function () {
+                var a = $("#fValue").val();
+                var b = $("#sValue").val();
+                var c = parseInt(a) + parseInt(b);
+                $("#t3").val(c);
+                $("#d1").text("Addition is:"+c);
+                $("#d2").html("<b>Addition is: "+c+"</b>");
+            });
+
+            $(function () {
+                $("#dialog").dialog();
+            });
+
+        });
+    </script>
+    <script>
+        $(function () {
+            $("#dialog-message").dialog({
+                modal: true,
+                buttons: {
+                    Ok: function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+
+</body>
+</html>
